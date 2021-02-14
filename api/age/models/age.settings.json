@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ages",
+  "info": {
+    "name": "age",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "programs": {
+      "via": "age",
+      "collection": "program"
+    },
+    "num": {
+      "type": "string",
+      "maxLength": 2
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "links",
+  "info": {
+    "name": "links"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "instagram": {
+      "type": "string"
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "vk": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}

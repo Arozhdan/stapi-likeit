@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stats",
+  "info": {
+    "name": "stat"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "graduates": {
+      "type": "integer"
+    },
+    "programs": {
+      "type": "integer"
+    },
+    "teachers": {
+      "type": "integer"
+    }
+  }
+}

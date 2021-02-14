@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prices",
+  "info": {
+    "name": "price",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "plan": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "integer",
+      "max": 35,
+      "min": 1
+    },
+    "amount": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 7
+    }
+  }
+}

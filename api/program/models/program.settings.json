@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programs",
+  "info": {
+    "name": "program",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "minLength": 4
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "category": {
+      "via": "programs",
+      "model": "category"
+    },
+    "age": {
+      "model": "age",
+      "via": "programs"
+    },
+    "slug": {
+      "type": "string",
+      "maxLength": 12
+    },
+    "course": {
+      "type": "json"
+    },
+    "lessons": {
+      "type": "integer"
+    },
+    "practices": {
+      "type": "integer"
+    },
+    "schemes": {
+      "type": "integer"
+    }
+  }
+}
